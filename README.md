@@ -1,5 +1,5 @@
 
-# 华瓴前端测试quankunjs的vase项目
+# 华瓴前端测试quankunjs的Base项目
 
 ## Vue 3 + Typescript + Vite + qiankun + VueX + Vue-router
 
