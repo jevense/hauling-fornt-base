@@ -1,11 +1,4 @@
-/*
- * @Author: decong.li
- * @Date: 2022/02/06 21:49:48 Sunday
- * @LastEditors: decong.li
- * @LastEditTime: 2022/03/03 13:59:07 Thursday
- * @FilePath: /vite-project/src/router/index.ts
- */
-import { createRouter, createWebHashHistory } from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 
 const routes = [
   {
@@ -18,9 +11,9 @@ const routes = [
   },
 ]
 
-const routeHash = (hash: string) =>{
+const routeHash = (hash: string) => {
   const router = createRouter({
-    history: createWebHashHistory(hash),
+    history: createWebHistory(hash),
     routes
   })
   router.beforeEach((to, from, next) => {

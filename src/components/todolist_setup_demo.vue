@@ -1,15 +1,7 @@
-<!--
- * @Author: decong.li
- * @Date: 2022/02/06 19:21:44 Sunday
- * @LastEditors: decong.li
- * @LastEditTime: 2022/03/03 15:33:23 Thursday
- * @FilePath: /vite-project/src/components/todolist_setup_demo.vue
--->
-<!-- copy -->
 <template>
   <h1>我是todolist子组件</h1>
   <div>{{ count }}</div>
-  <input v-model="count" />
+  <input v-model="count"/>
   <div>doubleCount-{{ doubleCount }}</div>
   <!-- array类型 -->
   <button @click="addList">点击新增</button>
@@ -26,11 +18,12 @@
 </template>
 
 <script lang='ts' setup>
-import { ref, defineProps, computed } from 'vue';
-import type { PropType } from "vue";
-import { Todo, Info } from '../types'
-import { useStore } from "vuex";
-import { Key } from '../store';
+import {ref, defineProps, computed} from 'vue';
+import type {PropType} from "vue";
+import {Todo, Info} from '../types'
+import {useStore} from "vuex";
+import {Key} from '../store';
+
 const store = useStore(Key)
 console.log(store.state.count)
 const count = ref(0)

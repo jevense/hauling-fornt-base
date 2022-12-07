@@ -1,12 +1,5 @@
-<!--
- * @Author: decong.li
- * @Date: 2022/02/06 14:47:24 Sunday
- * @LastEditors: decong.li
- * @LastEditTime: 2022/03/03 16:14:41 Thursday
- * @FilePath: /vite-project/src/components/HelloWorld.vue
--->
 <script setup lang="ts">
-import { ref } from 'vue'
+import {ref} from 'vue'
 
 defineProps<{ msg: string }>()
 
@@ -14,7 +7,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1> 
+  <h1>{{ msg }}</h1>
 
   <p>
     Recommended IDE setup:

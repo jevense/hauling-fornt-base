@@ -1,10 +1,3 @@
-<!--
- * @Author: decong.li
- * @Date: 2022/02/06 21:50:10 Sunday
- * @LastEditors: decong.li
- * @LastEditTime: 2022/03/03 16:14:14 Thursday
- * @FilePath: /vite-project/src/views/Home.vue
--->
 <!-- home -->
 <template>
   <div>home页面</div>
@@ -17,14 +10,15 @@
 </template>
 <script lang="ts">
 export default {
-  name:"home"
+  name: "home"
 }
 </script>
-<script setup  lang='ts'>
-import { ref, defineComponent, reactive, onMounted, getCurrentInstance } from 'vue';
-import { createOrgRes } from '../api/ucOrg/type';
+<script setup lang='ts'>
+import {ref, defineComponent, reactive, onMounted, getCurrentInstance} from 'vue';
+import {createOrgRes} from '../api/ucOrg/type';
 import $api from '../api';
-import { Todo } from '../types';
+import {Todo} from '../types';
+
 const items = ref([] as Todo[])
 const showData = ref<createOrgRes>({})
 onMounted(() => {

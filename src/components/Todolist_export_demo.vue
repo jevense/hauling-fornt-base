@@ -1,16 +1,8 @@
-<!--
- * @Author: decong.li
- * @Date: 2022/02/06 15:40:50 Sunday
- * @LastEditors: decong.li
- * @LastEditTime: 2022/03/03 15:32:57 Thursday
- * @FilePath: /vite-project/src/components/Todolist_export_demo.vue
--->
-<!--   -->
 <template>
   <h1>我是todolist子组件</h1>
   <div>{{ count }}</div>
   <input v-model="count"/>
-  <div>doubleCount-{{doubleCount}}</div>
+  <div>doubleCount-{{ doubleCount }}</div>
   <!-- array类型 -->
   <button @click="addList">点击新增</button>
   <div v-for="(item, index) in items" :key="index">
@@ -23,8 +15,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
-import { Todo, Info } from "../types";
+import {defineComponent, PropType} from "vue";
+import {Todo, Info} from "../types";
+
 export default defineComponent({
   name: 'todolist',
   props: {
@@ -40,25 +33,23 @@ export default defineComponent({
     }
   },
   methods: {
-    newTodo():Todo {
+    newTodo(): Todo {
       return {
         id: this.items.length,
         name: 'xiaoming',
         age: 22
       }
     },
-    addList():void {
+    addList(): void {
       this.items.push(this.newTodo())
     }
   },
-  computed:{
-    doubleCount():number {
+  computed: {
+    doubleCount(): number {
       return this.count * 2
     }
   },
-  components: {
-
-  }
+  components: {}
 })
 
 </script>

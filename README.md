@@ -1,10 +1,4 @@
-<!--
- * @Author: decong.li
- * @Date: 2022/02/06 14:47:24 Sunday
- * @LastEditors: decong.li
- * @LastEditTime: 2022/03/03 16:18:19 Thursday
- * @FilePath: /vue-template/README.md
--->
+
 # Vue 3 + Typescript + Vite + qiankun + VueX + Vue-router
 
 This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
