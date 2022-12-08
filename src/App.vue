@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import {ref} from 'vue';
-import {Menu as IconMenu, Message, Setting} from '@element-plus/icons-vue'
+import {Menu as IconMenu} from '@element-plus/icons-vue'
 import {$post} from './api/request'
 
 async function login() {
