@@ -4,7 +4,7 @@ import * as actions from './shared'
 registerMicroApps([
     {
       name: 'subReportAdmin',
-      entry: '//localhost:8090',
+      entry: '//huahill-nj:8090',
       container: '#container',
       activeRule: '/sub-report-admin',
       props: { actions },
