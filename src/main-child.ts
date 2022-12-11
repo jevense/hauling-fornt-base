@@ -5,7 +5,6 @@ import store, {Key} from './store'
 import {routeHash} from './router'
 import './api/request'
 import {renderWithQiankun, qiankunWindow} from 'vite-plugin-qiankun/dist/helper';
-import {QiankunProps} from "vite-plugin-qiankun/es/helper";
 
 // renders生命周期函数
 renderWithQiankun({
@@ -19,7 +18,7 @@ renderWithQiankun({
   bootstrap() {
     console.log('bootstrap');
   },
-  unmount(props: any) {
+  unmount() {
     console.log('unmount');
   }
 });
