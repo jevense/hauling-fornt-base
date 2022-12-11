@@ -21,7 +21,5 @@ declare module '@vue/runtime-core' {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Todolist_export_demo: typeof import('./src/components/Todolist_export_demo.vue')['default']
-    Todolist_setup_demo: typeof import('./src/components/todolist_setup_demo.vue')['default']
   }
 }

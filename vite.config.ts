@@ -4,7 +4,6 @@ import {resolve} from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-// https://vitejs.dev/config/
 export default defineConfig({
   publicDir: 'public',
   plugins: [
@@ -33,7 +32,7 @@ export default defineConfig({
     proxy: {
       "/report": {
         // target: "http://221.224.90.19:10102/report",
-        target: "http://172.16.5.18:10212",
+        target: "http://localhost:10212",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/report/, ""),
       },
